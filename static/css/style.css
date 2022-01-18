@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color:#333;
+    --primary-light-color:#ffffff;
+    --secondary-color:#e9692c;/*#e1a244;*/
+    --alice-blue:#e3f0ff;
+    --blue-color:#3da3a2;
+    --box-shadow-color: 0 .1rem .5rem rgba(51,51,51,.5);
+    --border-color: .2rem solid rgba(51,51,51, .3);
+    --text-shadow-color: 0 .1rem .5rem rgba(95, 95, 95, 0.3);
+
+    
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-transform:none;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+ 
+}
+.heading, .title{
+    text-transform: capitalize;
+}
+/*********************************** HEADER STARTS HERE *******************************************************/
+.header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    z-index: 100;
+    background: var(--primary-light-color);
+    box-shadow: var(--box-shadow-color);
+}
+.header a{
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-decoration: none;
+    color:var(--secondary-color)
+}
+.header .fa-bars{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: none;
+}
+.header .logo-img{
+margin-bottom: 0;
+height: 8.5rem;
+}
+.header .navbar ul{
+display:flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+padding: 0;
+margin:0;
+}
+.header .navbar ul li{
+    margin:0 1.5rem;
+}
+.header .navbar ul li a:hover{
+    padding-bottom: .3rem;
+    border-bottom: .2rem solid var(--secondary-color);
+}
+/*********************************** HEADER ENDS HERE *******************************************************/
+
+/*********************************** HOME STARTS HERE *******************************************************/
+
+
+.landing{
+    padding-top: 13.5rem !important;
+    position: relative;
+    padding-bottom: .3rem;
+   /* height: 90vh;*/
+}
+
+.landing .info{
+    margin:3rem 0;
+    
+}
+.landing .title{
+    padding-top: 5.5rem;
+    font-size: 3rem;
+    color:var(--primary-color);
+    font-weight: 600;
+    text-align: left;
+}
+.landing .p-info{
+    font-size:1.7rem;
+    color:var(--primary-color);
+    padding-bottom: 3rem;
+    text-align: left;
+}
+.landing .btn-us{
+    background-color: var(--secondary-color);
+    padding:10px 18.5px !important;
+    color: var(--primary-light-color);
+    text-transform: capitalize;
+    font-size: 2rem;
+    border-bottom: .5rem;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    
+}
+ #wave {
+    position: relative;
+ 
+    
+}
+
+/**************** waves ******************
+.div {
+    display: block;
+    position: relative;
+    top: -2px;
+    height: 50px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1366 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 0 C 416.4 0 277.6 110 694 110 L 694 110 L 694 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 693 110 C 711.6 110 705.4 110 724 110 L 724 110 L 724 0 L 693 0 Z" stroke-width="0"></path> <path fill="rgba(47, 73, 94, 1)" d="M 723 110 C 741.6 110 735.4 110 754 110 L 754 110 L 754 0 L 723 0 Z" stroke-width="0"></path><path fill="rgba(47, 73, 94, 1)" d="M 753 110 C 1114.8 110 994.2 0 1356 0 L 1356 0 L 1356 0 L 753 0 Z" stroke-width="0"></path></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+   @media (max-width:1365px) {
+    .div {
+      background-size: contain;
+    }
+   }
+   
+
+*/
+
+/*******************************************HEADING STARTS HERE ********************************/
+.heading{
+    /*TURN IT TO A GLOBAL VARIABLE*/
+    font-size:3rem;
+   text-align: center;
+    color:#333;
+    margin:3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+    font-weight: 600;
+}
+.heading::after{
+    content:'';
+    position: absolute;
+    bottom: -.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background:var(--secondary-color);
+}
+h2{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.para,ul {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+/*******************************************HEADING ENDS HERE ********************************/
+
+/*******************************************ABOUT US STARTS HERE ********************************/
+.about{
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.about .info{
+    padding: 0 2rem;
+}
+.about .title{
+    padding-top: 5.5rem;
+    font-weight: 500;
+    font-size: 3rem;
+    color:var(--primary-color);
+}
+.about .p-info{
+    font-size:1.7rem;
+    color:#333;
+    padding-bottom: 3rem;
+}
+.about .more-info{
+    display: none;
+}
+.about .btn-read-more{
+ 
+  padding:15px 25px !important;
+    color: var(--primary-light-color);
+    background: var(--secondary-color);
+    font-size: 2rem;
+   margin-top:-2.2rem;
+    border-bottom: .5rem;
+    border:none;
+    outline: none;
+    border-radius: 50px;
+    cursor:pointer;
+}
+.about .show-more .more-info{
+display: inline;
+}
+.about .show-more .dots{
+    display: none;
+}
+.quote {
+    text-align: center !important;
+    margin-top: 2.4rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    
+    font-style: italic;
+    text-shadow: var(--box-shadow-color);
+    transition: .5s ease;
+}
+.checks li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    padding: 1.51rem;
+}
+.checks li .title-value{
+    font-weight: 800;
+}
+.checks li .fa-check{
+    margin-left: .1px;
+  color: VAR(--secondary-color);
+    font-weight: 800;
+    text-shadow: var(--text-shadow-color);
+}
+
+/**********************************************  START SERVICE **********************************************************/
+.services{
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem;
+    position: relative;
+
+}
+.accordion{
+    border:2rem #e9692c;
+}
+.accordion-item{
+font-size: 1.25rem;
+border:2px var(--secondary-color);
+}
+.accordion-item h2 button{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: var(--secondary-color);
+  position: relative;
+  box-shadow: var(--box-shadow-color) !important;
+  border-radius: 10px!important;
+}
+.accordion-item h2 button .fa{
+    position: absolute;
+    right:20px;
+    top:50%;
+    font-size: 1.53rem;
+    font-weight: 800;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    transition: .3s all ease;
+
+
+}
+
+.accordion-item h2 button:hover{
+    text-decoration: none;
+    box-shadow: var(--box-shadow-color) !important;
+} 
+.accordion-item h2 button.collapsed {
+    color: #333;
+}
+
+.accordion-item h2 button.collapsed .fa {
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.accordion-button:not(.collapsed){
+    color: var(--secondary-color);
+    background: #ffffff;
+    border:none;
+}
+.accordion-button:focus{
+    box-shadow: var(--box-shadow-color);
+}
+
+/**********************************************  END SERVICE **********************************************************/
+
+
+
+
+
+/***************  CAROUSEL PARTNERS STARTS **************/
+.partners{
+    padding-top: 2.5rem !important;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.slick-slide{
+    margin:2px 2px;
+    background: var(--primary-light-color);
+}
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top:0;
+    left:0;
+    display: block;
+
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img {
+    display: block;
+
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.partners .box-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.partners .box-container .box {
+    height: 10rem;
+    width:20rem;
+    cursor: pointer;
+    padding-top:1.4rem;
+    margin: 2.5rem;
+    
+}
+.partners .box-container .box img {
+    width: 20rem;
+    height: 8rem;
+}
+.partners .box-container .box img:hover{
+    height: 8rem;
+    width:30rem;
+}
+
+/***************  CAROUSEL PARTNERS ENDS **************/
+
+
+
+/***************  CLIENTS START **************/
+.clients .heading{
+    margin-top: 2rem;
+}
+.clients .box-container{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.clients .box-container .box {
+    height: 13rem;
+    width:25rem;
+    cursor: pointer;
+    padding-top:2.4rem;
+    margin: 2.5rem;
+  
+}
+.clients .box-container img {
+    width:25rem;
+    height: 12rem;
+}
+/***************  CLIENTS END **************/
+
+
+
+/**********************************************  START FOOTER ***********************************************************/
+.footer{
+   /* background: url(/assets/images/bgFooter.png);*/
+   position: relative;
+   bottom:0px;
+   width:100%;
+   background: #333;
+   color: #d9d9d9;
+}
+
+.footer .main-content {
+    display:flex;
+}
+.footer .main-content .box{
+    flex-basis: 50%;
+    padding:10px 20px;
+}
+
+ .footer .main-content .box .content{
+     margin:20px 0 0;
+     position: relative;
+ }
+
+ .footer .main-content .box .content:before{
+position: absolute;
+content: '';
+margin-top: -1.5rem;
+height: 2px;
+width: 45%;
+background: var(--primary-light-color);
+ }
+ .footer .main-content .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 20%;
+    background: var(--secondary-color);
+    top: -1.5rem;
+    
+ }
+
+ .footer .main-content .box p{
+     text-align: justify;
+ }
+ .footer .main-content .content{
+     margin: 20px 0 0 0;
+ }
+ .footer .main-content .left .social {
+     margin:20px 0 0 0;
+ }
+ .footer .main-content .left .social a{
+     padding: 0 2px;
+     color: var(--secondary-color);
+ }
+
+ .footer .main-content .left .social a span{
+     height: 40px;
+     width: 40px;
+     background: #1a1a1a;
+     line-height: 40px;
+     text-align: center;
+     font-size: 18px;
+     border-radius: 5px;
+ }
+ .footer .main-content .left .social a span:hover{
+background: #ffffff;
+}
+
+
+/* Center content  */
+.footer .content .fas {
+   
+font-size: 1.4375rem;
+background: #1a1a1a;
+color: var(--secondary-color);
+height: 40px;
+width: 40px;
+line-height: 40px;
+text-align:center;
+border-radius: 50%;
+transition: 0.3s;
+cursor: pointer;
+
+}
+.footer .content .fas:hover {
+background: #ffffff;
+}
+.footer .content .email .text a{
+    text-transform:lowercase !important;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.footer .content .text {
+    font-size: 1.3625rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.footer .content .phone {
+    margin: 10px 0;
+}
+.footer .main-content .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: var(--secondary-color);
+}
+.footer .main-content .right form .msg{
+margin-top: 10px;
+}
+.footer .main-content .right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: rgb(102, 102, 102);
+    padding-left: 10px;
+    border:  1px solid #222222;
+}
+.footer .main-content .right form input:focus,
+.footer .main-content .right form textarea:focus{
+    outline-color: var(--secondary-color);
+}
+
+.footer .main-content .right form input {
+    height: 35px;
+}
+.footer .right form .btn-send-mail{
+margin-top: 10px;
+}
+
+.footer .right form .btn-send-mail button{
+    height: 40px;
+    width: 100%;
+    border:none;
+    outline: none;
+    background: var(--secondary-color);
+    color: var(--primary-light-color);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.footer .right form .btn-send-mail button:hover{
+    background:none;
+    outline: 2px solid var(--secondary-color);
+    color:var(--secondary-color);
+}
+.footer .bottom .center{
+    padding:5px;
+    font-size: 0.95rem;
+    background: #151515;
+}
+.footer .bottom .center span{
+    color: #656565;
+}
+.footer .bottom .center a{
+    color: #656565;
+    text-decoration: none;
+}
+.footer .bottom .center a:hover{
+text-decoration: underline;
+color: var(--primary-light-color);
+}
+/**************************** START MEDIA QUERIES *************************************/
+@media (max-width:1110px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:890px){
+    html{
+        font-size: 45%;
+    }
+}
+@media (max-width: 767px){
+.header .fa-bars{
+    display: block;
+}
+.header .navbar{
+    position: fixed;
+    top: -120%; left:0;
+    height: calc(100vh - 9.8rem);
+   /* top:0;left:0;
+    height: 100vh;*/
+    width: 100vw;
+    background: var(--primary-light-color);
+    border-top: var(--border-color);
+    
+}
+.header .navbar ul{
+height: 100%;
+width: 100%;
+flex-flow: column;
+justify-content: center;
+}
+.header .navbar ul li {
+    margin: 1.5rem 0;
+}
+
+.header .navbar ul li a {
+    font-size: 2.5rem;
+}
+.header .navbar.nav-toggle{
+    top:9.8rem;
+    transition: all .2s linear;
+    }
+
+/*********** carousel about us*************/
+
+.landing img{
+    height: 30%;
+      background-color: transparent;
+      width: 100%;
+  }
+ 
+.landing .info{
+text-align: left;
+font-size: 24px;
+    
+}
+.landing .title{
+    padding-top: 5.5rem;
+    font-size: 3rem;
+    color:var(--primary-color);
+    font-weight: 600;
+    text-align: left;
+}
+.landing .p-info{
+    font-size:1.7rem;
+    color:var(--primary-color);
+    padding-bottom: 3rem;
+    text-align: left;
+}
+
+/***************  Footer **************/
+.footer {
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
+    text-align: center !important;
+}
+.main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    text-align: center !important;
+}
+.footer h2{
+    color: var(--secondary-color);
+}
+.main-content .box {
+    margin: 5px 0;
+    justify-content: center;
+    text-align: center !important;
+}
+.footer .main-content .box .content:before{
+    display: none;
+}
+.footer .main-content .box .content:after{
+display: none;
+}
+
+}
+
+/**************************** END MEDIA QUERIES *************************************/
